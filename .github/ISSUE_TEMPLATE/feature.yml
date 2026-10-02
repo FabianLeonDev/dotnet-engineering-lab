@@ -1,0 +1,87 @@
+name: Feature
+description: Propose a new feature or improvement.
+title: "[Feature]: "
+labels: ["feature"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Provide the background and relevant context for this feature.
+      placeholder: What is happening today? Who or what is affected?
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the problem this feature should solve.
+    validations:
+      required: true
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: State the desired outcome.
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requirements / Expected behavior
+      description: List the required behavior and any relevant details.
+      placeholder: Use one bullet per requirement.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: List conditions that must be met for this feature to be complete.
+      placeholder: Use testable, observable criteria.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Describe what is included in this feature.
+    validations:
+      required: false
+
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of scope
+      description: Describe what is explicitly not included.
+    validations:
+      required: false
+
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints
+      description: Note technical, product, or operational constraints.
+    validations:
+      required: false
+
+  - type: textarea
+    id: assumptions
+    attributes:
+      label: Assumptions
+      description: List assumptions that this proposal relies on.
+    validations:
+      required: false
+
+  - type: textarea
+    id: risks-unknowns
+    attributes:
+      label: Risks / Unknowns
+      description: Identify potential risks, open questions, and areas needing investigation.
+    validations:
+      required: false

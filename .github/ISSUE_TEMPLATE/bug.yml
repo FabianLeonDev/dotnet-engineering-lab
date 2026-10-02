@@ -1,0 +1,65 @@
+name: Bug
+description: Report unexpected behavior or a defect.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: observed-behavior
+    attributes:
+      label: Observed behavior
+      description: Describe what actually happens.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: Describe what should happen instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Provide the steps or minimal example needed to reproduce the bug.
+      placeholder: |
+        1. Set up...
+        2. Run...
+        3. Observe...
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Describe who or what is affected and the severity or frequency.
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: List testable conditions that must be met for the bug to be considered fixed.
+      placeholder: Use one criterion per bullet.
+    validations:
+      required: false
+
+  - type: textarea
+    id: scope-out-of-scope
+    attributes:
+      label: Scope / Out of scope
+      description: Describe what the fix should include and what it should explicitly exclude.
+    validations:
+      required: false
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Add relevant logs, screenshots, stack traces, or other supporting information.
+    validations:
+      required: false

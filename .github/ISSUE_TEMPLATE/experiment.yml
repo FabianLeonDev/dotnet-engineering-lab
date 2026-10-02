@@ -1,0 +1,68 @@
+name: Experiment
+description: Propose a focused experiment to investigate a .NET engineering question.
+title: "[Experiment]: "
+labels: ["experiment"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Describe the background and why this experiment is relevant.
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: State the specific question this experiment is intended to answer.
+    validations:
+      required: true
+
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis
+      description: State the expected outcome and the reasoning behind it.
+    validations:
+      required: true
+
+  - type: textarea
+    id: setup
+    attributes:
+      label: Setup
+      description: Describe the environment, implementation, and procedure for the experiment.
+    validations:
+      required: true
+
+  - type: textarea
+    id: variables
+    attributes:
+      label: Variables
+      description: Identify the independent, dependent, and controlled variables.
+    validations:
+      required: true
+
+  - type: textarea
+    id: measurement
+    attributes:
+      label: Measurement
+      description: Explain what will be measured and how the measurements will be collected.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-evidence
+    attributes:
+      label: Expected evidence
+      description: Describe the results or evidence that would support or refute the hypothesis.
+    validations:
+      required: true
+
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Limitations
+      description: Note limitations, sources of bias, or factors that may affect interpretation.
+    validations:
+      required: false
