@@ -9,7 +9,7 @@ var scenarios = new[]
 };
 
 const int sampleCount = 3;
-Console.WriteLine("Independent asynchronous I/O simulation (median of 3 samples)");
+Console.WriteLine($"Independent asynchronous I/O simulation (median of {sampleCount} samples)");
 Console.WriteLine("Times are illustrative; results depend on the environment.");
 Console.WriteLine();
 Console.WriteLine($"{ "Scenario",-20} { "Tasks",5} { "Sequential (ms)",18} { "Task.WhenAll (ms)",19} { "Time saved (ms)",17}");
