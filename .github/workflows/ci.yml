@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build-and-test:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -24,3 +24,6 @@ jobs:
 
       - name: Build
         run: dotnet build DotnetEngineeringLab.sln --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test DotnetEngineeringLab.sln --configuration Release --no-build --no-restore
