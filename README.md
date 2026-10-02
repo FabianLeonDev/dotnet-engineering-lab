@@ -13,3 +13,14 @@ Each experiment focuses on a specific topic, with an emphasis on understanding b
 - Data — data access, serialization, storage, and related experiments
 
 Experiments are intentionally isolated and self-contained, making the repository a space for learning, experimentation, measurement, and technical investigation.
+
+## Experiment layout
+
+Keep each experiment in its own runnable project, grouped first by engineering area and then by experiment name. Put related tests under the matching path in `tests/`.
+
+```text
+src/<Area>/<ExperimentName>/
+tests/<Area>/<ExperimentName>.Tests/
+```
+
+For example, the async comparison lives in `src/Async/AwaitVsTaskWhenAll/` and its tests live in `tests/Async/AwaitVsTaskWhenAll.Tests/`. Add new areas and experiments as needed; the root solution and CI workflow cover all projects added to the solution.
